@@ -1,0 +1,38 @@
+!BIOSYM molecular_data 4
+ 
+!Date: Fri Oct 11 19:36:10 2019   Materials Studio Generated MDF file
+ 
+#topology
+
+@column 1 element
+@column 2 atom_type
+@column 3 charge_group
+@column 4 isotope
+@column 5 formal_charge
+@column 6 charge
+@column 7 switching_atom
+@column 8 oop_flag
+@column 9 chirality_flag
+@column 10 occupancy
+@column 11 xray_temp_factor
+@column 12 connections
+ 
+@molecule Molecule
+ 
+XXXX_1:Mo1          Mo x       ?     0  4+    0.0000 0 0 8 1.0000  0.0000 Mo2 C3 C4 C5 
+XXXX_1:Mo2          Mo x       ?     0  4+    0.0000 0 0 8 1.0000  0.0000 Mo1 C3 C4 C8 
+XXXX_1:C3           C  x       ?     0  2-    0.0000 0 0 8 1.0000  0.0000 Mo1 Mo2 
+XXXX_1:C4           C  x       ?     0  2-    0.0000 0 0 8 1.0000  0.0000 Mo1 Mo2 
+XXXX_1:C5           C  x       ?     0  1-    0.0000 0 0 8 1.0000  0.0000 Mo1 C6/3.0 
+XXXX_1:C6           C  x       ?     0  0     0.0000 0 0 8 1.0000  0.0000 C5/3.0 C7 
+XXXX_1:C7           C  x       ?     0  0     0.0000 0 0 8 1.0000  0.0000 C6 C8/3.0 
+XXXX_1:C8           C  x       ?     0  1-    0.0000 0 0 8 1.0000  0.0000 Mo2 C7/3.0 
+ 
+
+#atomset
+
+@list subset MDF_FIXED_ATOMS_SUBSET
+
+Molecule:XXXX_1:Mo1 Mo2 C3 C4 C5 C6 C7 C8 
+
+#end

@@ -1,0 +1,44 @@
+
+# Task parameters
+Calculate                     lstqst
+Opt_ts_cg_steps               20
+Opt_ts_qst_cycles             5
+Opt_ts_gradtol                1.0000e-02 A
+
+# Cartesian constraints
+Opt_fixed
+1   XYZ
+2   XYZ
+3   XYZ
+4   XYZ
+5   XYZ
+6   XYZ
+7   XYZ
+8   XYZ
+
+Symmetry                      off
+Max_memory                    2048
+File_usage                    smart
+Scf_density_convergence       1.000000e-05
+Scf_charge_mixing             2.000000e-01
+Scf_diis                      6 pulay
+Scf_iterations                500
+
+# Electronic parameters
+Spin_polarization             restricted
+Charge                        0
+Basis                         dnd
+Pseudopotential               none
+Functional                    gga(p91)
+Aux_density                   hexadecapole
+Integration_grid              medium
+Occupation                    fermi
+Cutoff_Global                 4.4000 angstrom
+
+# Calculated properties
+Mulliken_analysis             charge
+Hirshfeld_analysis            charge
+Bond_orders                   on
+Frequency_analysis            on
+plot_dos                     on
+empty_bands                  12

@@ -1,0 +1,132 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- CSS: Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Categories</title>
+
+    <style>
+        .container {
+            width: auto;
+            /* max-width: 680px; */
+            padding: 0 15px;
+        }
+
+        .footer {
+            background-color: #f5f5f5;
+        }
+    </style>
+</head>
+
+<body class="d-flex flex-column h-100"  >
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark ">
+
+      <!-- <ul class="navbar-nav mr-auto">
+      <li class="nav-item active dropdown mr-auto" >
+          <a class="nav-link dropdown-toggle mr-auto" href="#" role=button data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="true">Sort By</a>
+          <div class="dropdown-menu " >
+              <a class="dropdown-item mx-auto" href="/Finances">Price Low to High</a>
+              <a class="dropdown-item mx-auto" href="/Reporting">Price High to Low</a>
+              <a class="dropdown-item mx-auto" href="/Marketing">Rating</a>
+          </div>
+      </li>
+    </ul> -->
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <form class="form-inline my-2 my-lg-0" action="{{ url_for('search') }}" method="post">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                </li>
+
+              <li class="nav-item active dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role=button data-toggle="dropdown" aria-haspopup="true"
+                      aria-expanded="false">Sort By</a>
+                  <div class="dropdown-menu" >
+                      <a class="dropdown-item"><input type="radio" name="sort" id="sort" value="1" checked>Rating</a>
+                      <a class="dropdown-item"><input type="radio" name="sort" id="sort" value="2">Prices: low to high</a>
+                      <a class="dropdown-item"><input type="radio" name="sort" id="sort" value="3">Prices: high to lowe</a>
+                  </div>
+              </li>
+            </ul>
+                <input class="form-control mr-sm-2" type="text" name="sinput" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+
+            </form>
+
+        </div>
+
+    </nav>
+
+    <!-- Begin page content -->
+    <main role="main" class="flex-shrink-0">
+
+        <!-- Main jumbotron for a primary marketing message or call to action -->
+        <!-- <div class="jumbotron">
+            <div class="container">
+                <h1 class="display-4">Welcome to AppHome !!</h1>
+                <p style="margin-top: 25px;">
+                  An app store to make your android life Awesome!!<br> Now providing over a billion apps. Fast, Easy and Great ;)
+                </p>
+            </div>
+        </div> -->
+
+        <div class="container">
+            <h2 class="mt-5 ">Search Results Apps</h1>
+            <!-- <p class="lead">Showing the results of: SELECT * FROM playstore ORDER BY random() LIMIT 25</p> -->
+
+
+            <table class=" table table-dark table-bordered">
+                <thead>
+                    <tr>
+                        <th scope="col">Icon</th>
+                        <th scope="col">App Title</th>
+                        <th scope="col">Category</th>
+                        <th scope="col">Price($/month)</th>
+                        <th scope="col">Rating</th>
+                        <th scope="col">Download</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for row in rows %}
+                    <tr>
+                        <td style="width: 12.5%" scope="row"><img src={{row[0]}} class="rounded float-left" height = "50", width = "50"></td>
+                        <td style="width: 25%" scope="row">{{row[1]}}</td>
+                        <td style="width: 25%" scope="row">{{row[2]}}</td>
+                        <td style="width: 12.5%" scope="row">{{row[3]}}</td>
+                        <td style="width: 12.5%" scope="row">{{row[4]}}</td>
+                        <td style="width: 12.5%" scope="row"><a href = {{row[5]}}>Get App </a></td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+
+        </div>
+    </main>
+
+    <footer class="footer mt-auto py-3">
+        <div class="container">
+            <span class="text-muted">
+                Built by
+                <a href="https://github.com/Shivanshu156" target="_blank">@shivanshu156</a> using
+                <a href="http://flask.pocoo.org" target="_blank">Flask</a>,
+                <a href="https://getbootstrap.com/docs/4.2/" target="_blank">Bootstrap</a>,
+                <a href="https://code.visualstudio.com" target="_blank">VSCode</a>.
+            </span>
+        </div>
+    </footer>
+
+</body>
+
+</html>

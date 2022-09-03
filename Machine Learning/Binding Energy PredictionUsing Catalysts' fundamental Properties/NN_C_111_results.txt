@@ -1,0 +1,4 @@
+Test_error: 93.77121604549444
+Train_error: 93.71376092590833
+R square score for test data is  -23836.32318179881
+R square score for train data is  -11584.5971281897

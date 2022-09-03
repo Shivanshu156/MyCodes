@@ -1,0 +1,76 @@
+Materials Studio SDF calculation
+TCVAMP81A 
+
+ 13  0  0  0  0  0              1 V2000
+    1.2767    0.1191    0.9430 Mo  0  0
+   -1.2897    0.4842    0.2057 Mo  0  0
+   -0.2648   -0.9980    0.8037 C   0  0
+    0.3210    1.4652   -0.0159 C   0  0
+    1.1207    0.7656    2.7733 C   0  0
+    0.0258    1.2213    3.3428 C   0  0
+   -1.1853    1.3655    2.9095 C   0  0
+   -1.9853    1.2123    1.8934 C   0  0
+   -2.8639    2.3869   -0.2401 C   0  0
+   -3.2314    1.3884    0.0257 H   0  0
+   -3.2294    2.6573   -1.2381 H   0  0
+   -3.2274    3.1173    0.4928 H   0  0
+   -1.7672    2.3845   -0.2407 H   0  0
+M  END
+
+> <TOTAL ENERGY>
+BIOVIA, TYPE=DOUBLE, VERSION=1                                                  
+ -8224.71660509
+
+> <BINDING ENERGY>
+BIOVIA, TYPE=DOUBLE, VERSION=1                                                  
+    -2.29127737
+
+> <HIRSHFELD CHARGE>
+BIOVIA, TYPE=DOUBLE, ATOMISTIC, VERSION=1                                       
+  1     0.49326550
+  2     0.50413869
+  3    -0.30478152
+  4    -0.30016026
+  5    -0.17097838
+  6    -0.04549668
+  7    -0.01397434
+  8    -0.17173482
+  9    -0.14942941
+ 10     0.03149299
+ 11     0.04647474
+ 12     0.04849873
+ 13     0.03318539
+
+> <HOMO ENERGY>
+BIOVIA, TYPE=DOUBLE, VERSION=1                                                  
+    -0.17660660
+
+> <LUMO ENERGY>
+BIOVIA, TYPE=DOUBLE, VERSION=1                                                  
+    -0.14694758
+
+> <LUMO-HOMO ENERGY>
+BIOVIA, TYPE=DOUBLE, VERSION=1                                                  
+     0.02965902
+
+> <MULLIKEN CHARGE>
+BIOVIA, TYPE=DOUBLE, ATOMISTIC, VERSION=1                                       
+  1     0.67587283
+  2     0.64920897
+  3    -0.44358104
+  4    -0.43880226
+  5    -0.27098176
+  6    -0.01204984
+  7     0.09666113
+  8    -0.29899822
+  9    -0.88636061
+ 10     0.20775466
+ 11     0.23464823
+ 12     0.24264175
+ 13     0.24398616
+
+> <OPERATION STATUS>
+BIOVIA, TYPE=STATUS, VERSION=1                                                  
+SUCCESS
+
+$$$$

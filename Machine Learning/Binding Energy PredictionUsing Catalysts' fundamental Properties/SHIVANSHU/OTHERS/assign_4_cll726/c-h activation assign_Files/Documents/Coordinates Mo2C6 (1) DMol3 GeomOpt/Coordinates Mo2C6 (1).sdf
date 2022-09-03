@@ -1,0 +1,61 @@
+Materials Studio SDF calculation
+TCVAMP81A 
+
+  8  0  0  0  0  0              1 V2000
+    1.2767    0.1191    0.9430 Mo  0  0
+   -1.2897    0.4842    0.2057 Mo  0  0
+   -0.2648   -0.9980    0.8037 C   0  0
+    0.3210    1.4652   -0.0159 C   0  0
+    1.1207    0.7656    2.7733 C   0  0
+    0.0258    1.2213    3.3428 C   0  0
+   -1.1853    1.3655    2.9095 C   0  0
+   -1.9853    1.2123    1.8934 C   0  0
+M  END
+
+> <TOTAL ENERGY>
+BIOVIA, TYPE=DOUBLE, VERSION=1                                                  
+ -8184.21409721
+
+> <BINDING ENERGY>
+BIOVIA, TYPE=DOUBLE, VERSION=1                                                  
+    -1.62117723
+
+> <HIRSHFELD CHARGE>
+BIOVIA, TYPE=DOUBLE, ATOMISTIC, VERSION=1                                       
+  1     0.49688251
+  2     0.51450035
+  3    -0.30168236
+  4    -0.30178011
+  5    -0.16911288
+  6    -0.04342189
+  7    -0.01270803
+  8    -0.18245337
+
+> <HOMO ENERGY>
+BIOVIA, TYPE=DOUBLE, VERSION=1                                                  
+    -0.17930222
+
+> <LUMO ENERGY>
+BIOVIA, TYPE=DOUBLE, VERSION=1                                                  
+    -0.14990130
+
+> <LUMO-HOMO ENERGY>
+BIOVIA, TYPE=DOUBLE, VERSION=1                                                  
+     0.02940092
+
+> <MULLIKEN CHARGE>
+BIOVIA, TYPE=DOUBLE, ATOMISTIC, VERSION=1                                       
+  1     0.68072518
+  2     0.67169826
+  3    -0.43249540
+  4    -0.43213898
+  5    -0.26835118
+  6    -0.00959902
+  7     0.09954622
+  8    -0.30938508
+
+> <OPERATION STATUS>
+BIOVIA, TYPE=STATUS, VERSION=1                                                  
+SUCCESS
+
+$$$$

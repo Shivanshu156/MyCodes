@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="latin1"?>
+<!DOCTYPE XCD []>
+<XCD Version="19.1" NumCharts="1">
+	<CHART_2D>
+		<DATA_2D NumSeries="5">
+			<SERIES_2D UniqueID="0" Name="Energy vs. LST path 1" NumPoints="14">
+				<POINT_2D XY="1,-8224.716879129999" ItemData="2"/>
+				<POINT_2D XY="0.5654979999999999,-8224.58522051" ItemData="5"/>
+				<POINT_2D XY="0.476096,-8224.571377189999" ItemData="9"/>
+				<POINT_2D XY="0.444382,-8224.56914498" ItemData="10"/>
+				<POINT_2D XY="0.435389,-8224.569008840001" ItemData="12"/>
+				<POINT_2D XY="0.432335,-8224.56875113" ItemData="11"/>
+				<POINT_2D XY="0.4263,-8224.568650380001" ItemData="13"/>
+				<POINT_2D XY="0.424849,-8224.5686319" ItemData="7"/>
+				<POINT_2D XY="0.424849,-8224.568631960001" ItemData="14"/>
+				<POINT_2D XY="0.42274,-8224.56862398" ItemData="8"/>
+				<POINT_2D XY="0.355522,-8224.57280881" ItemData="4"/>
+				<POINT_2D XY="0.280884,-8224.589178480001" ItemData="6"/>
+				<POINT_2D XY="0.170557,-8224.6371445" ItemData="3"/>
+				<POINT_2D XY="0,-8224.71665267" ItemData="1"/>
+			</SERIES_2D>
+			<SERIES_2D UniqueID="1" Name="Energy vs. CG path 1" NumPoints="10">
+				<POINT_2D XY="0.424849,-8224.568631960001" ItemData="15"/>
+				<POINT_2D XY="0.43534,-8224.60331178" ItemData="16"/>
+				<POINT_2D XY="0.43329,-8224.618532259999" ItemData="17"/>
+				<POINT_2D XY="0.423921,-8224.62512176" ItemData="18"/>
+				<POINT_2D XY="0.419105,-8224.634050709999" ItemData="19"/>
+				<POINT_2D XY="0.418452,-8224.63872626" ItemData="20"/>
+				<POINT_2D XY="0.423267,-8224.643917670001" ItemData="21"/>
+				<POINT_2D XY="0.428972,-8224.64704403" ItemData="22"/>
+				<POINT_2D XY="0.450706,-8224.65424009" ItemData="23"/>
+				<POINT_2D XY="0.463227,-8224.657505200001" ItemData="24"/>
+			</SERIES_2D>
+			<SERIES_2D UniqueID="2" Name="Energy vs. QST path 2" NumPoints="14">
+				<POINT_2D XY="1,-8224.716879129999" ItemData="26"/>
+				<POINT_2D XY="0.689095,-8224.67701716" ItemData="29"/>
+				<POINT_2D XY="0.533433,-8224.65509011" ItemData="33"/>
+				<POINT_2D XY="0.526928,-8224.65475399" ItemData="34"/>
+				<POINT_2D XY="0.522941,-8224.654587929999" ItemData="30"/>
+				<POINT_2D XY="0.520436,-8224.654635880001" ItemData="37"/>
+				<POINT_2D XY="0.519512,-8224.654472710001" ItemData="35"/>
+				<POINT_2D XY="0.519512,-8224.654472620001" ItemData="38"/>
+				<POINT_2D XY="0.517092,-8224.654542779999" ItemData="36"/>
+				<POINT_2D XY="0.513641,-8224.65563517" ItemData="32"/>
+				<POINT_2D XY="0.489899,-8224.65534193" ItemData="31"/>
+				<POINT_2D XY="0.463227,-8224.657505200001" ItemData="27"/>
+				<POINT_2D XY="0.361131,-8224.6926384" ItemData="28"/>
+				<POINT_2D XY="0,-8224.71665267" ItemData="25"/>
+			</SERIES_2D>
+			<SERIES_2D UniqueID="3" Name="Energy vs. CG path 2" NumPoints="2">
+				<POINT_2D XY="0.519512,-8224.654472620001" ItemData="39"/>
+				<POINT_2D XY="0.514911,-8224.65563542" ItemData="40"/>
+			</SERIES_2D>
+			<SERIES_2D UniqueID="4" Name="Transition state" NumPoints="1">
+				<POINT_2D XY="0.514911,-8224.65563542" ItemData="40"/>
+			</SERIES_2D>
+		</DATA_2D>
+		<MARKERS_2D NumMarkers="0" Visible="true" Width="1" Style="Solid" Color="255,0,0"/>
+		<CARTESIAN_2D_PLOT PlotType="Line" Visible="1" BackgroundColor="255,255,255" ForegroundColor="0,0,0" Box="1">
+			<TITLE Visible="1" Text="DMol3 Transition State Search">
+				<FONT/>
+			</TITLE>
+			<LEGEND Visible="1" Heading=""/>
+			<CARTESIAN_AXES_2D XOriginPos="Min" YOriginPos="Min" XTickPos="Auto" YTickPos="Auto">
+				<AXIS_X Visible="true" Reversed="false" Title="Path Coordinate">
+					<FONT/>
+					<AXIS_LINE Visible="true" Width="1" Style="Solid" Color="185,185,185"/>
+					<MAJOR_TICKMARKS Length="6" Visible="true" Width="1" Style="Solid" Color="185,185,185"/>
+					<MINOR_TICKMARKS Length="2" Visible="true" Width="1" Style="Solid" Color="185,185,185"/>
+				</AXIS_X>
+				<AXIS_Y Visible="true" Reversed="false" Title="Energy (Ha)">
+					<FONT/>
+					<AXIS_LINE Visible="true" Width="1" Style="Solid" Color="185,185,185"/>
+					<MAJOR_TICKMARKS Length="6" Visible="true" Width="1" Style="Solid" Color="185,185,185"/>
+					<MINOR_TICKMARKS Length="2" Visible="true" Width="1" Style="Solid" Color="185,185,185"/>
+				</AXIS_Y>
+			</CARTESIAN_AXES_2D>
+			<CARTESIAN_GRID_2D>
+				<GRID_X Visible="true" DefaultSpaced="true" Spacing="0">
+					<MAJOR_LINES Visible="false" Width="1" Style="Solid" Color="236,236,236"/>
+					<MINOR_LINES Visible="false" Width="1" Style="Solid" Color="236,236,236"/>
+				</GRID_X>
+				<GRID_Y Visible="true" DefaultSpaced="true" Spacing="0">
+					<MAJOR_LINES Visible="true" Width="1" Style="Solid" Color="236,236,236"/>
+					<MINOR_LINES Visible="false" Width="1" Style="Solid" Color="236,236,236"/>
+				</GRID_Y>
+			</CARTESIAN_GRID_2D>
+			<CARTESIAN_GRAPH_2D_STYLE LineVisible="true" LineWidth="1" LineStyle="Solid" LineColor="0,128,0" SymbolSize="6" SymbolShape="Dot" SymbolColor="0,128,0" BarOrientation="Horizontal" BarWidth="0.5" BarColor="0,0,255" DendrogramCursorColor="0,0,255" DendrogramCursorWidth="1" DendrogramCursorPosition="0.5"/>
+			<CARTESIAN_GRAPH_2D_STYLE LineVisible="true" LineWidth="1" LineStyle="Dash" LineColor="255,128,0" SymbolSize="6" SymbolShape="Box" SymbolColor="255,128,0" BarOrientation="Horizontal" BarWidth="0.5" BarColor="255,0,0" DendrogramCursorColor="255,0,0" DendrogramCursorWidth="1" DendrogramCursorPosition="0.5"/>
+			<CARTESIAN_GRAPH_2D_STYLE LineVisible="true" LineWidth="1" LineStyle="ShortDash" LineColor="0,0,255" SymbolSize="6" SymbolShape="Cross" SymbolColor="0,0,255" BarOrientation="Horizontal" BarWidth="0.5" BarColor="0,255,0" DendrogramCursorColor="0,255,0" DendrogramCursorWidth="1" DendrogramCursorPosition="0.5"/>
+			<CARTESIAN_GRAPH_2D_STYLE LineVisible="true" LineWidth="1" LineStyle="LongDashShortDash" LineColor="200,0,0" SymbolSize="6" SymbolShape="Circle" SymbolColor="200,0,0" BarOrientation="Horizontal" BarWidth="0.5" BarColor="92,92,205" DendrogramCursorColor="92,92,205" DendrogramCursorWidth="1" DendrogramCursorPosition="0.5"/>
+			<CARTESIAN_GRAPH_2D_STYLE LineVisible="true" LineWidth="1" LineStyle="None" LineColor="0,0,0" SymbolSize="10" SymbolShape="Star" SymbolColor="128,0,128" BarOrientation="Horizontal" BarWidth="0.5" BarColor="255,112,132" DendrogramCursorColor="255,112,132" DendrogramCursorWidth="1" DendrogramCursorPosition="0.5"/>
+		</CARTESIAN_2D_PLOT>
+	</CHART_2D>
+</XCD>

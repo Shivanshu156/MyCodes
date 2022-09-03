@@ -1,0 +1,6 @@
+Test_error: 0.7203805054605802
+Train_error: 0.3595614645118216
+R square score for test data is  0.6053743225434813
+R square score for train data is  0.9128951674833472
+Percentage Train Error 9.270426027609028 % with 60 of 1295 outliner points
+Percentage Test Error 19.749529734999882 % with 43 of 324 outliner points

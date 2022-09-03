@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="latin1"?>
+<EXTENSION VERSION="19.1">
+<LOGICS>
+<LOGICITEM NAME="DisplayStyle">
+	<STATE NAME="Viewer3dDisplayStyleState" VERSION="19.1">
+	<PROPERTIES>
+	</PROPERTIES>
+	</STATE>
+</LOGICITEM>
+<LOGICITEM NAME="Labels">
+	<STATE NAME="Viewer3dLabelsState" VERSION="19.1">
+	<PROPERTIES>
+	</PROPERTIES>
+	</STATE>
+</LOGICITEM>
+<LOGICITEM NAME="Lighting">
+	<STATE NAME="Viewer3dLightingState" VERSION="19.1">
+	<PROPERTIES>
+	</PROPERTIES>
+	</STATE>
+</LOGICITEM>
+<LOGICITEM NAME="MovementOptions">
+	<STATE NAME="Viewer3dMovementOptionsState" VERSION="19.1">
+	<PROPERTIES>
+	<PROPERTY NAME="NudgeAngle">
+	<VALUE>5.</VALUE>
+	</PROPERTY>
+	</PROPERTIES>
+	</STATE>
+</LOGICITEM>
+<LOGICITEM NAME="Options">
+	<STATE NAME="Viewer3dOptionsState" VERSION="19.1">
+	<PROPERTIES>
+	</PROPERTIES>
+	</STATE>
+</LOGICITEM>
+<LOGICITEM NAME="Session">
+	<STATE NAME="Viewer3dSessionState" VERSION="19.1">
+	<PROPERTIES>
+	</PROPERTIES>
+	</STATE>
+</LOGICITEM>
+</LOGICS>
+</EXTENSION>

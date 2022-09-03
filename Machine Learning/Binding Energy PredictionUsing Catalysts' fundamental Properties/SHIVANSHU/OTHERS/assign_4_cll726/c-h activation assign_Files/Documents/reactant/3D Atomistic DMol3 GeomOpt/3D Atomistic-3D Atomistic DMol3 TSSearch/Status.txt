@@ -1,0 +1,16 @@
+====================================================
+                  DMol3 Run Status                  
+====================================================
+ 
+Job Name            :        3D_Atomistic-3D_Atomistic
+Task                :        Property
+Basis               :        dnd                 
+Atom_Rcut           :        4.400 Angstrom
+Functional          :        gga(p91)            
+Harris              :        off  
+Integration Grid    :        medium              
+Occupation          :        fermi     
+Pseudopotential     :        none                
+Property            :        none                
+ 
+====================================================
