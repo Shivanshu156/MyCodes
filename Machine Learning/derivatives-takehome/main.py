@@ -1,6 +1,8 @@
-from typing import Tuple
-
+import re
 import numpy as np
+from typing import Tuple
+from sklearn.preprocessing import LabelEncoder
+from sklearn.preprocessing import OneHotEncoder
 
 MAX_SEQUENCE_LENGTH = 30
 TRAIN_URL = "https://drive.google.com/file/d/1ND_nNV5Lh2_rf3xcHbvwkKLbY2DmOH09/view?usp=sharing"
@@ -25,6 +27,14 @@ def predict(functions: str):
 
 # ----------------- END ----------------- #
 
+def get_label_encoder(functions, true_derivatives):
+    charset = set()
+    for function in functions:
+        for x in re.split(r"(exp|sin|cos|\^|\/|[a-zA-Z]|[0-9]|[()]|\+|\-|\*|\#)", function):
+            charset.add(x)
+    label_encoder = LabelEncoder()
+    return label_encoder.fit(list(charset))
+
 
 def main(filepath: str = "test.txt"):
     """load, inference, and evaluate"""
@@ -34,5 +44,15 @@ def main(filepath: str = "test.txt"):
     print(np.mean(scores))
 
 
+def train(filepath: str = "train.txt"):
+    """load, inference, and evaluate"""
+    functions, true_derivatives = load_file(filepath)
+    functions = [function.ljust(30, "#") for function in functions]
+    true_derivatives = [true_derivative.ljust(30, "#") for true_derivative in true_derivatives]
+    label_encoder = get_label_encoder(functions, true_derivatives)
+
+
+
 if __name__ == "__main__":
-    main()
+    train()
+    # main()
