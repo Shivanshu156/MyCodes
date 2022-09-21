@@ -82,7 +82,7 @@ if __name__ == "__main__":
 
     for i, function in enumerate(functions_test):
         for t, token in enumerate(
-                list(filter(None, re.split(r"(exp|sin|cos|\^|\/|[a-zA-Z]|[0-9]|[()]|\+|\-|\*|\#|\n|\t)", function)))):
+                list(filter(None, re.split(r"(exp|sin|cos|\^|[a-zA-Z]|[0-9]|[()]|\+|\*|\n|\t)", function)))):
             encoder_input_data_test[i, t, token_to_index[token]] = 1.0
         encoder_input_data_test[i, t + 1:, token_to_index['']] = 1.0
 

@@ -7,8 +7,8 @@ MAX_SEQUENCE_LEN = 32
 BATCH_SIZE = 512
 EPOCHS = 10
 LSTM_UNITS = 750
-NUM_SAMPLES = 1000
-filepath = "sample_train.txt"
+NUM_SAMPLES = 1000000
+filepath = "train.txt"
 
 
 def tokenize(expression):
@@ -55,16 +55,16 @@ if __name__ == "__main__":
 
     for i, (function, derivative) in enumerate(zip(functions, derivatives)):
 
-        for t, token in enumerate(tokenize(function)):
-            encoder_input_data[i, t, token_to_index[token]] = 1.0
-        encoder_input_data[i, t + 1:, token_to_index['']] = 1.0
+        for t_f, token_f in enumerate(tokenize(function)):
+            encoder_input_data[i, t_f, token_to_index[token_f]] = 1.0
+        encoder_input_data[i, t_f + 1:, token_to_index['']] = 1.0
 
-        for t, token in enumerate(tokenize(derivative)):
-            decoder_input_data[i, t, token_to_index[token]] = 1.0
-            if t > 0:
-                decoder_target_data[i, t - 1, token_to_index[token]] = 1.0
-        decoder_input_data[i, t + 1:, token_to_index['']] = 1.0
-        decoder_target_data[i, t:, token_to_index['']] = 1.0
+        for t_d, token_d in enumerate(tokenize(derivative)):
+            decoder_input_data[i, t_d, token_to_index[token_d]] = 1.0
+            if t_d > 0:
+                decoder_target_data[i, t_d - 1, token_to_index[token_d]] = 1.0
+        decoder_input_data[i, t_d + 1:, token_to_index['']] = 1.0
+        decoder_target_data[i, t_d:, token_to_index['']] = 1.0
 
     print('function and derivative vectors created successfully!!')
 
