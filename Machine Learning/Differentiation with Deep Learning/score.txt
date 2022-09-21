@@ -1,0 +1,23 @@
+# I have splitted the data into 990000 train and 10000 test examples from train.txt
+# Following is the output after running main.py on a random 100 test samples from
+# 10000 test examples which were never used in training :
+
+
+Loading trained model .....
+2022-09-20 00:38:34.219565: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+Model loaded successfully!!
+Number of test samples: 100
+Predicting derivatives for test file .......
+10 predicted_test_derivatives matched with 10 actual_test_derivatives in total 21s
+20 predicted_test_derivatives matched with 20 actual_test_derivatives in total 40s
+30 predicted_test_derivatives matched with 30 actual_test_derivatives in total 66s
+40 predicted_test_derivatives matched with 40 actual_test_derivatives in total 87s
+50 predicted_test_derivatives matched with 50 actual_test_derivatives in total 105s
+60 predicted_test_derivatives matched with 60 actual_test_derivatives in total 121s
+70 predicted_test_derivatives matched with 70 actual_test_derivatives in total 159s
+80 predicted_test_derivatives matched with 80 actual_test_derivatives in total 188s
+Wrong prediction !! Test function d(13x^9+12sin^10(17x))/dx, Predicted derivative 117x^8-1300cos(17x)*sin^9(17x), Actual derivative 117x^8+2040cos(17x)*sin^9(17x)
+89 predicted_test_derivatives matched with 90 actual_test_derivatives in total 215s
+99 predicted_test_derivatives matched with 100 actual_test_derivatives in total 236s
+accuracy is :  0.99
