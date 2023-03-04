@@ -1,0 +1,7 @@
+aws_access_key_id: AKIA5MQVEE2DINYTO42R
+aws_secret_access_key: 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
+sqs_queue_url: https://sqs.us-east-1.amazonaws.com/920241055366/StdQueue1
+sqs_request_queue: https://sqs.us-east-1.amazonaws.com/920241055366/RequestQueue
+sqs_response_queue: https://sqs.us-east-1.amazonaws.com/920241055366/ResponseQueue
+input_bucket_name: inputapptierbucket
+output_bucket_name: outputapptierbucket
