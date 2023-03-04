@@ -1,6 +1,4 @@
-# CSE 546 Project 1 
 
-Daksh Dobhal, Shivanshu Verma, Gaurav Verma
 ## Dependencies
 
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install dependencies.
