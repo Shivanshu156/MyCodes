@@ -48,11 +48,3 @@ References:
 3.	https://github.com/keras-team/keras-io/blob/master/examples/nlp/lstm_seq2seq.py
 
 
-Licence:
-This is a licensed problem with Scale AI copyright. This code is written by me with reference to above references.
-
-Copyright © Scale AI 2022 - All Rights Reserved
-
-This takehome is the property of Scale AI. Copying, distributing or sharing this takehome and any derivative works created from this takehome via any medium is strictly prohibited. Any attempt to do so is a violation of the rights of Scale AI. Individuals who breach these terms may be subject to prosecution and damages.
-
-Proprietary and confidential
